@@ -90,9 +90,9 @@ class PostController extends Controller
 
         if($request->hasFile('image')) {
             if ($post->image_path) {
-                Storage::delete($post->image_path);
+                Storage::disk('s3')->delete($post->image_path);
             }
-            $data['image_path'] = Storage::put('posts', $request->file('image'), 'public');
+            $data['image_path'] = Storage::disk('s3')->put('posts', $request->file('image'), 'public');
         } 
 
         $post->update($data);
