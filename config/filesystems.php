@@ -49,12 +49,12 @@ return [
 
         's3' => [
             'driver' => 's3',
-            'key' => env('AWS_ACCESS_KEY_ID'),
-            'secret' => env('AWS_SECRET_ACCESS_KEY'),
+            'key' => 'cda1792660c8b1a194d5060052eec628',
+            'secret' => '48976c8e2fd091de48e4f9c5b280d88361b2cd2741a5e44a831cbc8bd495eceb',
             'region' => 'auto',
             'bucket' => 'fls-9f71d4be-a5e1-406c-a0b4-bb2accba436d',
             'url' => env('AWS_URL'),
-            'endpoint' => env('AWS_ENDPOINT'),
+            'endpoint' => 'https://367be3a2035528943240074d0096e0cd.r2.cloudflarestorage.com',
             'use_path_style_endpoint' => env('AWS_USE_PATH_STYLE_ENDPOINT', false),
             'throw' => false,
             'report' => false,
