@@ -52,7 +52,7 @@ return [
             'key' => env('AWS_ACCESS_KEY_ID'),
             'secret' => env('AWS_SECRET_ACCESS_KEY'),
             'region' => 'auto',
-            'bucket' => env('AWS_BUCKET'),
+            'bucket' => 'fls-9f71d4be-a5e1-406c-a0b4-bb2accba436d',
             'url' => env('AWS_URL'),
             'endpoint' => env('AWS_ENDPOINT'),
             'use_path_style_endpoint' => env('AWS_USE_PATH_STYLE_ENDPOINT', false),
