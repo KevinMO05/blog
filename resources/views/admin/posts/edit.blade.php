@@ -22,7 +22,7 @@
 
             <div class="relative mb-8">
                 <img id="imgPreview" class="w-full aspect-video object-cover object-center"
-                    src="{{ $post->image_path ? Storage::url($post->image_path) : 'https://thumb.ac-illust.com/b1/b170870007dfa419295d949814474ab2_t.jpeg' }}"
+                    src="{{ $post->image_path ?  Storage::disk('s3')->url($post->image_path) : 'https://thumb.ac-illust.com/b1/b170870007dfa419295d949814474ab2_t.jpeg' }}"
                     alt="">
 
                 <div class="absolute top-8 right-8 ">
