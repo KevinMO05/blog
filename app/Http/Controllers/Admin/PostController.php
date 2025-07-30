@@ -92,7 +92,7 @@ class PostController extends Controller
             if ($post->image_path) {
                 Storage::delete($post->image_path);
             }
-            $data['image_path'] = Storage::put('posts', $request->file('image'));
+            $data['image_path'] = Storage::put('posts', $request->file('image'), 'public');
         } 
 
         $post->update($data);

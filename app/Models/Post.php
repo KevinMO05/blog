@@ -33,7 +33,7 @@ class Post extends Model
 
     protected function image(): Attribute{
         return Attribute::make(
-            get: fn () => $this->image_path ? Storage::url($this->image_path) : 'https://thumb.ac-illust.com/b1/b170870007dfa419295d949814474ab2_t.jpeg' 
+            get: fn () => $this->image_path ? Storage::disk('s3')->url($this->image_path) : 'https://thumb.ac-illust.com/b1/b170870007dfa419295d949814474ab2_t.jpeg' 
         );
     }
 
